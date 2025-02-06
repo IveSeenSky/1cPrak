@@ -1,0 +1,175 @@
+﻿<Page x:Class="WpfPrakApp.Pages.MainPages.EmployeeChoosenPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfPrakApp.Pages.MainPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EmployeeChoosenPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="EmployeeImage"
+               Margin="5"
+               Source="{Binding EmployeeImage}"/>
+
+        <StackPanel Grid.Column="1" 
+                        Orientation="Vertical"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="0,50,0,0">
+            
+            <TextBlock Text="Фио:"
+                       Margin="5"/>
+
+            <StackPanel Style="{StaticResource StackPanelStyle}">
+                <TextBlock x:Name="FirstNameRd"
+                           Style="{StaticResource TextBlockStyle}"
+                           Text="{Binding firstName}"/>
+                <TextBox x:Name="FirstNameWr"
+                         Style="{StaticResource TextBoxStyle}"
+                         Text="{Binding firstName}"/>
+                <Button x:Name="FirstNameChangeBtn" 
+                        Style="{StaticResource RevertButtonStyle}"
+                        Click="FirstNameChangeBtn_Click"/>
+            </StackPanel>
+
+            <StackPanel Style="{StaticResource StackPanelStyle}">
+                <TextBlock x:Name="SecondNameRd"
+                           Style="{StaticResource TextBlockStyle}"
+                           Text="{Binding secondName}"/>
+                <TextBox x:Name="SecondNameWr"
+                         Style="{StaticResource TextBoxStyle}"
+                         Text="{Binding secondName}"/>
+                <Button x:Name="SecondNameChangeBtn"
+                       Style="{StaticResource RevertButtonStyle}"
+                        Click="SecondNameChangeBtn_Click"/>
+            </StackPanel>
+
+            <StackPanel Style="{StaticResource StackPanelStyle}">
+                <TextBlock x:Name="PatronymicRd" 
+                           Style="{StaticResource TextBlockStyle}"
+                           Text="{Binding patronymic}"/>
+                <TextBox x:Name="PatronymicWr"
+                         Style="{StaticResource TextBoxStyle}"
+                         Text="{Binding patronymic}"/>
+                <Button x:Name="PatronymicChangeBtn"
+                        Style="{StaticResource RevertButtonStyle}"
+                        Click="PatronymicChangeBtn_Click"/>
+            </StackPanel>
+
+            <TextBlock Text="Возраст: "
+                       Margin="5"/>
+
+            <StackPanel Style="{StaticResource StackPanelStyle}">
+                <TextBlock x:Name="AgeRd"
+                           Style="{StaticResource TextBlockStyle}"
+                           Text="{Binding age}"/>
+                <TextBox x:Name="AgeWr"
+                         Style="{StaticResource TextBoxStyle}"
+                         Text="{Binding EmloyeeBirthday}"/>
+                <Button x:Name="AgeChangeBtn"
+                        Style="{StaticResource RevertButtonStyle}"
+                        Click="AgeChangeBtn_Click"/>
+            </StackPanel>
+        </StackPanel>
+
+        <TextBlock Grid.Row="1" 
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Text="Почта:"
+                   Margin="5"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" 
+                    Style="{StaticResource StackPanelStyle}">
+            <TextBlock x:Name="EmailRd"
+                       Style="{StaticResource TextBlockStyle}"
+                       Text="{Binding EmployeeEmail}"/>
+            <TextBox x:Name="EmailWr"
+                     Style="{StaticResource TextBoxStyle}"
+                     Text="{Binding EmployeeEmail}"/>
+            <Button x:Name="EmailChangeBtn"
+                    Style="{StaticResource RevertButtonStyle}"
+                    Click="EmailChangeBtn_Click"/>
+        </StackPanel>
+
+
+        <TextBlock x:Name="DivisionRd" 
+                   Grid.Row="2" Grid.Column="1"
+                   Text="{Binding Divisions.DivisionTitle}"/>
+
+        <StackPanel Grid.Row="2" Grid.Column="1"
+                    Style="{StaticResource StackPanelStyle}">
+            <TextBlock x:Name="AdressRd" 
+                       Style="{StaticResource TextBlockStyle}"
+                       Text="{Binding EmployeeAdress}"/>
+            <TextBox x:Name="AdressWr"
+                     Text="{Binding EmployeeAdress}"
+                     Style="{StaticResource TextBoxStyle}"/>
+            <Button x:Name="AdressChangeBtn"
+                    Style="{DynamicResource RevertButtonStyle}"
+                    Click="AdressChangeBtn_Click"/>
+        </StackPanel>
+
+        <TextBlock Grid.Row="3"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Text="Должность:"
+                   Margin="5"/>
+
+        <StackPanel Grid.Row="3" Grid.Column="1"
+                    Style="{StaticResource StackPanelStyle}">
+            <TextBlock x:Name="PositionRd" 
+                       Style="{StaticResource TextBlockStyle}"
+                       Text="{Binding Positions.PositionName}"/>
+            <Button x:Name="PositionChangeBtn"
+                    Style="{StaticResource RevertButtonStyle}"
+                    Click="PositionChangeBtn_Click"/>
+        </StackPanel>
+
+        <TextBlock Grid.Row="4"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Text="Отдел:"
+                   Margin="5"/>
+
+        <TextBlock Grid.Row="2" 
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Text="Адрес:"
+                   Margin="5"/>
+
+        <StackPanel Grid.Row="6"
+                    Grid.Column="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center">
+            
+            <Button x:Name="CancelBtn"
+                    Width="150"
+                    Content="Отмена"
+                    Margin="5 0"
+                    Click="CancelBtn_Click"/>
+            
+            <Button x:Name="SaveBtn"
+                    Width="150"
+                    Content="Сохранить"
+                    Margin="5 0"
+                    Click="SaveBtn_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Page>

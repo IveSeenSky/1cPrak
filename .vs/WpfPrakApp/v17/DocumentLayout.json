@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\berdn\\Documents\\GitHub\\1cPrak\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2A87B1-2FBE-4602-8982-CADB2FEF21CA}|WpfPrakApp\\WpfPrakApp.csproj|c:\\users\\berdn\\documents\\github\\1cprak\\wpfprakapp\\pages\\mainpages\\employeelistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD2A87B1-2FBE-4602-8982-CADB2FEF21CA}|WpfPrakApp\\WpfPrakApp.csproj|solutionrelative:wpfprakapp\\pages\\mainpages\\employeelistpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2A87B1-2FBE-4602-8982-CADB2FEF21CA}|WpfPrakApp\\WpfPrakApp.csproj|c:\\users\\berdn\\documents\\github\\1cprak\\wpfprakapp\\pages\\mainpages\\employeechoosenpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD2A87B1-2FBE-4602-8982-CADB2FEF21CA}|WpfPrakApp\\WpfPrakApp.csproj|solutionrelative:wpfprakapp\\pages\\mainpages\\employeechoosenpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2A87B1-2FBE-4602-8982-CADB2FEF21CA}|WpfPrakApp\\WpfPrakApp.csproj|c:\\users\\berdn\\documents\\github\\1cprak\\wpfprakapp\\pages\\staticpages\\menuitemframe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD2A87B1-2FBE-4602-8982-CADB2FEF21CA}|WpfPrakApp\\WpfPrakApp.csproj|solutionrelative:wpfprakapp\\pages\\staticpages\\menuitemframe.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeListPage.xaml",
+              "DocumentMoniker": "C:\\Users\\berdn\\Documents\\GitHub\\1cPrak\\WpfPrakApp\\Pages\\MainPages\\EmployeeListPage.xaml",
+              "RelativeDocumentMoniker": "WpfPrakApp\\Pages\\MainPages\\EmployeeListPage.xaml",
+              "ToolTip": "C:\\Users\\berdn\\Documents\\GitHub\\1cPrak\\WpfPrakApp\\Pages\\MainPages\\EmployeeListPage.xaml",
+              "RelativeToolTip": "WpfPrakApp\\Pages\\MainPages\\EmployeeListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T13:46:05.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeChoosenPage.xaml",
+              "DocumentMoniker": "C:\\Users\\berdn\\Documents\\GitHub\\1cPrak\\WpfPrakApp\\Pages\\MainPages\\EmployeeChoosenPage.xaml",
+              "RelativeDocumentMoniker": "WpfPrakApp\\Pages\\MainPages\\EmployeeChoosenPage.xaml",
+              "ToolTip": "C:\\Users\\berdn\\Documents\\GitHub\\1cPrak\\WpfPrakApp\\Pages\\MainPages\\EmployeeChoosenPage.xaml",
+              "RelativeToolTip": "WpfPrakApp\\Pages\\MainPages\\EmployeeChoosenPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T13:41:34.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuItemFrame.xaml",
+              "DocumentMoniker": "C:\\Users\\berdn\\Documents\\GitHub\\1cPrak\\WpfPrakApp\\Pages\\StaticPages\\MenuItemFrame.xaml",
+              "RelativeDocumentMoniker": "WpfPrakApp\\Pages\\StaticPages\\MenuItemFrame.xaml",
+              "ToolTip": "C:\\Users\\berdn\\Documents\\GitHub\\1cPrak\\WpfPrakApp\\Pages\\StaticPages\\MenuItemFrame.xaml",
+              "RelativeToolTip": "WpfPrakApp\\Pages\\StaticPages\\MenuItemFrame.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-06T13:41:24.068Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
