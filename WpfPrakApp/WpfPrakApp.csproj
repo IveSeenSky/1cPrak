@@ -114,14 +114,20 @@
     <Compile Include="AppData\Sales.cs">
       <DependentUpon>ModelLocal.tt</DependentUpon>
     </Compile>
+    <Compile Include="AppData\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ModelLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ModelLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData\sysdiagrams.cs">
+      <DependentUpon>ModelLocal.tt</DependentUpon>
+    </Compile>
     <Compile Include="AppData\UserRoles.cs">
       <DependentUpon>ModelLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="AppData\Users.cs">
       <DependentUpon>ModelLocal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\MainPages\EmployeeAddEditPage.xaml.cs">
-      <DependentUpon>EmployeeAddEditPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainPages\EmployeeChoosenPage.xaml.cs">
       <DependentUpon>EmployeeChoosenPage.xaml</DependentUpon>
@@ -148,10 +154,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\LoginPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\MainPages\EmployeeAddEditPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -239,7 +241,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DatabaseLocal.mdf</DependentUpon>
     </Content>
-    <Resource Include="Recources\Images\Edit.png" />
+    <Resource Include="Recources\Images\close.png" />
+    <Resource Include="Recources\Images\check.png" />
+    <Resource Include="Recources\Images\square-edit-outline.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

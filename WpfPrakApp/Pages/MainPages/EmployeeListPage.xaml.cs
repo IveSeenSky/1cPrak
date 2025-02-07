@@ -28,6 +28,7 @@ namespace WpfPrakApp.Pages.MainPages
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
+
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -37,7 +38,11 @@ namespace WpfPrakApp.Pages.MainPages
 
         private void EmployeeLV_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            Navigate.MainFrame.Navigate(new EmployeeChoosenPage((sender as Button).DataContext as Employees));
+            if (EmployeeLV.SelectedItem != null)
+            {
+                Employees employees = (Employees) EmployeeLV.SelectedItem;
+                Navigate.MainFrame.Navigate(new EmployeeChoosenPage(employees));
+            }
         }
     }
 }

@@ -14,7 +14,7 @@
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
         <ListView x:Name="EmployeeLV" 
-                  HorizontalContentAlignment="Stretch" 
+                  HorizontalContentAlignment="Stretch"
                   MouseDoubleClick="EmployeeLV_MouseDoubleClick">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -27,7 +27,7 @@
                         <StackPanel HorizontalAlignment="Left" 
                                     Margin="5">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="{Binding Position.PositionName}" 
+                                <TextBlock Text="{Binding Positions.PositionName}" 
                                            Margin="5 0"/>
                                 <TextBlock Text="|"/>
                                 <TextBlock Text="{Binding EmployeeName}" 

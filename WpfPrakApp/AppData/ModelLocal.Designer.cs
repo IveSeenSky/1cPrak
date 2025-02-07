@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\User5\Documents\GithubRepos\1cPrak\WpfPrakApp\AppData\ModelLocal.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\berdn\Documents\GitHub\1cPrak\WpfPrakApp\AppData\ModelLocal.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

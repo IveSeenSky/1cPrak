@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\berdn\Documents\GitHub\1cPrak\WpfPrakApp\App.xaml
-61688962018
+5-1217054255
 4-1746565843
-27-274043626
+28-1660129455
 18-981213227
-MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPages\EmployeeAddEditPage.xaml;Pages\MainPages\EmployeeChoosenPage.xaml;Pages\MainPages\EmployeeListPage.xaml;Pages\StaticPages\MenuItemFrame.xaml;
+MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPages\EmployeeChoosenPage.xaml;Pages\MainPages\EmployeeListPage.xaml;Pages\StaticPages\MenuItemFrame.xaml;
 
-True
+False
 

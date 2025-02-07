@@ -5,7 +5,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         
-        <Style x:Key="RevertButtonStyle" TargetType="{x:Type Button}">
+        <Style x:Key="ChangeButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Height" Value="20" />
             <Setter Property="Width" Value="20" />
             <Setter Property="Background" Value="Transparent" />
@@ -13,7 +13,35 @@
             <Setter Property="ContentTemplate">
                 <Setter.Value>
                     <DataTemplate>
-                        <Image Source="pack://application:,,,/Recources/Images/Edit.png"/>
+                        <Image Source="pack://application:,,,/Recources/Images/square-edit-outline.png"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CancelChangesButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Image Source="pack://application:,,,/Recources/Images/close.png"/>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="CheckChangesButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Image Source="pack://application:,,,/Recources/Images/check.png"/>
                     </DataTemplate>
                 </Setter.Value>
             </Setter>
@@ -22,17 +50,17 @@
         <Style x:Key="StackPanelStyle" TargetType="{x:Type StackPanel}">
             <Setter Property="Orientation" Value="Horizontal"/>
             <Setter Property="HorizontalAlignment" Value="Left"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
             <Setter Property="Margin" Value="5 0"/>
         </Style>
 
         <Style x:Key="TextBlockStyle" TargetType="{x:Type TextBlock}">
-            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="Margin" Value="5 0"/>
         </Style>
 
         <Style x:Key="TextBoxStyle" TargetType="{x:Type TextBox}">
-            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="Margin" Value="5 0"/>
             <Setter Property="Visibility" Value="Collapsed"/>
         </Style>

@@ -11,11 +11,11 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="250"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -41,10 +41,18 @@
                            Text="{Binding firstName}"/>
                 <TextBox x:Name="FirstNameWr"
                          Style="{StaticResource TextBoxStyle}"
-                         Text="{Binding firstName}"/>
+                         Text=" "/>
                 <Button x:Name="FirstNameChangeBtn" 
-                        Style="{StaticResource RevertButtonStyle}"
+                        Style="{StaticResource ChangeButtonStyle}"
                         Click="FirstNameChangeBtn_Click"/>
+                <Button x:Name="FirstNameChangedBtn"
+                        Style="{StaticResource CheckChangesButtonStyle}"
+                        Visibility="Collapsed"
+                        Click="FirstNameChangedBtn_Click"/>
+                <Button x:Name="FirstNameCancelChangesBtn"
+                        Style="{StaticResource CancelChangesButtonStyle}"
+                        Visibility="Collapsed"
+                        Click="FirstNameCancelChangesBtn_Click"/>
             </StackPanel>
 
             <StackPanel Style="{StaticResource StackPanelStyle}">
@@ -53,10 +61,18 @@
                            Text="{Binding secondName}"/>
                 <TextBox x:Name="SecondNameWr"
                          Style="{StaticResource TextBoxStyle}"
-                         Text="{Binding secondName}"/>
+                         Text=" "/>
                 <Button x:Name="SecondNameChangeBtn"
-                       Style="{StaticResource RevertButtonStyle}"
+                       Style="{StaticResource ChangeButtonStyle}"
                         Click="SecondNameChangeBtn_Click"/>
+                <Button x:Name="SecondNameChangedBtn"
+                        Style="{StaticResource CheckChangesButtonStyle}"
+                        Visibility="Collapsed"
+                        Click="SecondNameChangedBtn_Click"/>
+                <Button x:Name="SecondNameCancelChangesBtn"
+                        Style="{StaticResource CancelChangesButtonStyle}"
+                        Visibility="Collapsed"
+                        Click="SecondNameCancelChangesBtn_Click"/>
             </StackPanel>
 
             <StackPanel Style="{StaticResource StackPanelStyle}">
@@ -65,10 +81,18 @@
                            Text="{Binding patronymic}"/>
                 <TextBox x:Name="PatronymicWr"
                          Style="{StaticResource TextBoxStyle}"
-                         Text="{Binding patronymic}"/>
+                         Text=" "/>
                 <Button x:Name="PatronymicChangeBtn"
-                        Style="{StaticResource RevertButtonStyle}"
+                        Style="{StaticResource ChangeButtonStyle}"
                         Click="PatronymicChangeBtn_Click"/>
+                <Button x:Name="PatronymicChangedBtn"
+                        Style="{StaticResource CheckChangesButtonStyle}"
+                        Visibility="Collapsed"
+                        Click="PatronymicChangedBtn_Click"/>
+                <Button x:Name="PatronymicCancelChangesBtn"
+                        Style="{StaticResource CancelChangesButtonStyle}"
+                        Visibility="Collapsed"
+                        Click="PatronymicCancelChangesBtn_Click"/>
             </StackPanel>
 
             <TextBlock Text="Возраст: "
@@ -82,16 +106,24 @@
                          Style="{StaticResource TextBoxStyle}"
                          Text="{Binding EmloyeeBirthday}"/>
                 <Button x:Name="AgeChangeBtn"
-                        Style="{StaticResource RevertButtonStyle}"
+                        Style="{StaticResource ChangeButtonStyle}"
                         Click="AgeChangeBtn_Click"/>
+                <Button x:Name="AgeChangedBtn"
+                        Visibility="Collapsed"
+                        Style="{StaticResource CheckChangesButtonStyle}"
+                        Click="AgeChangedBtn_Click"/>
+                <Button x:Name="AgeCancelChangesBtn"
+                        Visibility="Collapsed"
+                        Style="{StaticResource CancelChangesButtonStyle}"
+                        Click="AgeCancelChangesBtn_Click"/>
             </StackPanel>
         </StackPanel>
 
         <TextBlock Grid.Row="1" 
-                   VerticalAlignment="Center"
+                   VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Text="Почта:"
-                   Margin="5"/>
+                   Margin="5 2"/>
 
         <StackPanel Grid.Row="1" Grid.Column="1" 
                     Style="{StaticResource StackPanelStyle}">
@@ -102,14 +134,17 @@
                      Style="{StaticResource TextBoxStyle}"
                      Text="{Binding EmployeeEmail}"/>
             <Button x:Name="EmailChangeBtn"
-                    Style="{StaticResource RevertButtonStyle}"
+                    Style="{StaticResource ChangeButtonStyle}"
                     Click="EmailChangeBtn_Click"/>
+            <Button x:Name="EmailChangedBtn"
+                    Style="{StaticResource CheckChangesButtonStyle}"
+                    Visibility="Collapsed"
+                    Click="EmailChangedBtn_Click"/>
+            <Button x:Name="EmailCancelChangesBtn"
+                    Style="{StaticResource CancelChangesButtonStyle}"
+                    Visibility="Collapsed"
+                    Click="EmailCancelChangesBtn_Click"/>
         </StackPanel>
-
-
-        <TextBlock x:Name="DivisionRd" 
-                   Grid.Row="2" Grid.Column="1"
-                   Text="{Binding Divisions.DivisionTitle}"/>
 
         <StackPanel Grid.Row="2" Grid.Column="1"
                     Style="{StaticResource StackPanelStyle}">
@@ -120,43 +155,70 @@
                      Text="{Binding EmployeeAdress}"
                      Style="{StaticResource TextBoxStyle}"/>
             <Button x:Name="AdressChangeBtn"
-                    Style="{DynamicResource RevertButtonStyle}"
+                    Style="{DynamicResource ChangeButtonStyle}"
                     Click="AdressChangeBtn_Click"/>
+            <Button x:Name="AdressChangedBtn"
+                    Style="{StaticResource CheckChangesButtonStyle}"
+                    Visibility="Collapsed"
+                    Click="AdressChangedBtn_Click"/>
+            <Button x:Name="AdressCancelChangesBtn"
+                    Style="{StaticResource CancelChangesButtonStyle}"
+                    Visibility="Collapsed"
+                    Click="AdressCancelChangesBtn_Click"/>
         </StackPanel>
 
         <TextBlock Grid.Row="3"
-                   VerticalAlignment="Center"
+                   VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Text="Должность:"
-                   Margin="5"/>
+                   Margin="5 2"/>
 
         <StackPanel Grid.Row="3" Grid.Column="1"
                     Style="{StaticResource StackPanelStyle}">
             <TextBlock x:Name="PositionRd" 
                        Style="{StaticResource TextBlockStyle}"
                        Text="{Binding Positions.PositionName}"/>
+            <ComboBox x:Name="PositionWr_C"
+                      SelectedItem="{Binding Positions}"
+                      DisplayMemberPath="PositionName"
+                      Visibility="Collapsed"/>
+            
             <Button x:Name="PositionChangeBtn"
-                    Style="{StaticResource RevertButtonStyle}"
+                    Style="{StaticResource ChangeButtonStyle}"
                     Click="PositionChangeBtn_Click"/>
+            <Button x:Name="PositionChangedBtn"
+                    Style="{StaticResource CheckChangesButtonStyle}"
+                    Visibility="Collapsed"
+                    Click="PositionChangedBtn_Click"/>
+            <Button x:Name="PositionCancelChangesBtn"
+                    Visibility="Collapsed"
+                    Style="{StaticResource CancelChangesButtonStyle}"
+                    Click="PositionCancelChangesBtn_Click"/>
         </StackPanel>
 
         <TextBlock Grid.Row="4"
-                   VerticalAlignment="Center"
+                   VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Text="Отдел:"
-                   Margin="5"/>
+                   Margin="5 2"/>
+
+        <StackPanel Grid.Row="4" Grid.Column="1" 
+                    Style="{StaticResource StackPanelStyle}">
+            <TextBlock x:Name="DivisionRd" Style="{StaticResource TextBlockStyle}"
+                       Text="{Binding Divisions.DivisionTitle}"/>
+        </StackPanel>
 
         <TextBlock Grid.Row="2" 
-                   VerticalAlignment="Center"
+                   VerticalAlignment="Top"
                    HorizontalAlignment="Right"
                    Text="Адрес:"
-                   Margin="5"/>
+                   Margin="5 2"/>
 
-        <StackPanel Grid.Row="6"
-                    Grid.Column="1"
+        <StackPanel Grid.Row="6" Grid.Column="1"
+                    Margin="0 5"
                     Orientation="Horizontal"
                     HorizontalAlignment="Right"
-                    VerticalAlignment="Center">
+                    VerticalAlignment="Bottom">
             
             <Button x:Name="CancelBtn"
                     Width="150"

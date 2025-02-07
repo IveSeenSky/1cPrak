@@ -31,6 +31,7 @@ namespace WpfPrakApp.AppData
         public System.DateTime EmployeeBirthday { get; set; }
         public byte[] EmployeeImage { get; set; }
     
+        public virtual Positions Positions { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Payments> Payments { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

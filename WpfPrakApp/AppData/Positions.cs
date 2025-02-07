@@ -14,8 +14,18 @@ namespace WpfPrakApp.AppData
     
     public partial class Positions
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Positions()
+        {
+            this.Employees = new HashSet<Employees>();
+        }
+    
         public int PositionId { get; set; }
         public int DivisionId { get; set; }
         public string PositionName { get; set; }
+    
+        public virtual Divisions Divisions { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Employees> Employees { get; set; }
     }
 }
